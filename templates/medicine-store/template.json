@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "id": "medicine-store",
+    "name": "MediCare Pharmacy",
+    "version": "1.0.0",
+    "description": "A calm, welcoming demo pharmacy storefront for everyday wellness."
+  },
+  "store": {
+    "name": "MediCare Pharmacy",
+    "tagline": "Everyday care, made a little easier.",
+    "locale": "en-IN",
+    "currency": "INR",
+    "demo": true,
+    "freeDeliveryMinimum": 799,
+    "cartCopy": {
+      "emptyTitle": "Your bag is taking a little breather.",
+      "emptyDescription": "Let’s find something lovely for your everyday routine.",
+      "emptyButtonLabel": "Explore the store",
+      "checkoutNoticeTitle": "Just a checkout preview",
+      "checkoutNotice": "No payment details, prescriptions or patient information are requested in this demo.",
+      "confirmationTitle": "Your demo order is all set.",
+      "confirmationDescription": "This was a local checkout preview. No payment was taken, no order was sent and no personal or health information was collected.",
+      "loadingTitle": "Getting your demo order ready…",
+      "loadingDescription": "Just a moment. This preview stays on your device and won’t take a payment.",
+      "totalsDisclaimer": "This demo does not take payment.",
+      "checkoutFootnote": "Safe, simulated checkout · No real payments",
+      "freeDeliveryUnlocked": "You’ve unlocked free delivery!",
+      "freeDeliveryRemaining": "You’re {amount} away from free delivery",
+      "bagEyebrow": "A LITTLE CARE, COMING UP",
+      "checkoutEyebrow": "DEMO CHECKOUT",
+      "completeEyebrow": "THAT’S A WRAP",
+      "bagTitle": "Your bag",
+      "checkoutTitle": "Order summary",
+      "completeTitle": "Thanks for stopping by",
+      "completeButtonLabel": "Back to the store",
+      "continueCheckoutLabel": "Continue to demo checkout",
+      "placeOrderLabel": "Place demo order"
+    }
+  },
+  "theme": {
+    "primary": "#176B53",
+    "secondary": "#DFF3EC",
+    "pageBackground": "#FFFFFF",
+    "surface": "#F6FAF8",
+    "text": "#17332A",
+    "mutedText": "#70827A",
+    "border": "#E5EEE9",
+    "accent": "#E7F5EF",
+    "fontFamily": "system",
+    "borderRadius": 18,
+    "containerWidth": 1200,
+    "shadow": "soft"
+  },
+  "pages": {
+    "home": {
+      "title": "MediCare Pharmacy | Everyday care, made easier",
+      "description": "A demo storefront for everyday wellness, personal care and health essentials.",
+      "sections": [
+        {
+          "id": "announcement",
+          "type": "announcement",
+          "content": {
+            "message": "A little care goes a long way. Enjoy free delivery on orders over {minimum}.",
+            "linkLabel": "Explore the store",
+            "href": "#featured"
+          }
+        },
+        {
+          "id": "header",
+          "type": "header",
+          "content": {
+            "searchPlaceholder": "Search wellness, personal care & more",
+            "demoNote": "A friendly pharmacy storefront demo"
+          }
+        },
+        {
+          "id": "navigation",
+          "type": "navigation",
+          "content": {
+            "note": "Everyday care, made easier",
+            "links": [
+              { "label": "Shop all", "href": "#featured" },
+              { "label": "Vitamins & wellness", "href": "#categories", "categoryId": "wellness" },
+              { "label": "Personal care", "href": "#categories", "categoryId": "personal-care" },
+              { "label": "First aid", "href": "#categories", "categoryId": "first-aid" },
+              { "label": "Health essentials", "href": "#categories", "categoryId": "health-tools" },
+              { "label": "Our promise", "href": "#benefits" }
+            ]
+          }
+        },
+        {
+          "id": "hero",
+          "type": "hero",
+          "content": {
+            "eyebrow": "GOOD HEALTH, A LITTLE CLOSER",
+            "title": "Everyday care,\nmade a little easier.",
+            "description": "Thoughtful essentials for your everyday routine, delivered with a little extra care.",
+            "primaryCta": { "label": "Explore the collection", "href": "#featured" },
+            "secondaryCta": { "label": "Browse categories", "href": "#categories" },
+            "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=90",
+            "imageAlt": "Bright, calming pharmacy and wellness products arranged on a counter",
+            "stampTitle": "Here for the everyday",
+            "stampDescription": "A little care, delivered",
+            "sideNote": "MADE WITH EVERYDAY YOU IN MIND",
+            "proofPoints": ["Carefully chosen essentials", "Easy, secure checkout", "Here for your everyday"]
+          }
+        },
+        {
+          "id": "categories",
+          "type": "categories",
+          "content": {
+            "title": "Care for every day",
+            "description": "Find the essentials that fit into your routine.",
+            "eyebrow": "A GOOD PLACE TO BEGIN",
+            "clearFilterLabel": "Show everything",
+            "items": [
+              { "id": "wellness", "label": "Vitamins & wellness", "description": "Everyday essentials", "icon": "sparkles", "color": "mint" },
+              { "id": "personal-care", "label": "Personal care", "description": "Feel good, every day", "icon": "drop", "color": "peach" },
+              { "id": "first-aid", "label": "First aid", "description": "Ready for the little things", "icon": "heart", "color": "lavender" },
+              { "id": "health-tools", "label": "Health essentials", "description": "Simple at-home tools", "icon": "plus", "color": "blue" }
+            ]
+          }
+        },
+        {
+          "id": "featured",
+          "type": "product-grid",
+          "content": {
+            "title": "Everyday favourites",
+            "eyebrow": "A GOOD PLACE TO START",
+            "description": "Thoughtful picks for your everyday care routine.",
+            "productIds": ["daily-vitality", "radiance-sunscreen", "gentle-handwash", "comfort-bandages", "calm-moisturizer"],
+            "variant": "featured",
+            "showControls": true,
+            "stockInLabel": "In stock",
+            "stockLowLabel": "Almost gone",
+            "emptyTitle": "No little finds just yet",
+            "emptyDescription": "Try another search or clear your filters to see all our demo essentials.",
+            "emptyButtonLabel": "Clear filters",
+            "activeFilterPrefix": "Showing",
+            "clearFilterLabel": "Clear filter"
+          }
+        },
+        {
+          "id": "promotion",
+          "type": "promotion",
+          "content": {
+            "eyebrow": "A LITTLE SOMETHING EXTRA",
+            "title": "Your next little care package, on us.",
+            "description": "Take 15% off demo orders over ₹599 with code HELLOCARE. A warm welcome from our shelves to your home.",
+            "ctaLabel": "Shop the collection",
+            "href": "#featured",
+            "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85",
+            "imageAlt": "A curated selection of bright, minimal personal-care products",
+            "code": "HELLOCARE",
+            "discountPercent": 15,
+            "minimumOrder": 599,
+            "couponFieldLabel": "Have a little thank-you code?",
+            "couponSuccessMessage": "Lovely! Your {percent}% demo discount has been applied.",
+            "couponMinimumMessage": "Add at least {amount} to use this demo offer.",
+            "couponInvalidMessage": "That code doesn’t look right. Try {code}.",
+            "codeLabel": "Use code",
+            "imageStampLineOne": "HELLO,",
+            "imageStampLineTwo": "good things."
+          }
+        },
+        {
+          "id": "bestsellers",
+          "type": "product-grid",
+          "content": {
+            "title": "Loved by the everyday",
+            "eyebrow": "THE COMMUNITY FAVOURITES",
+            "description": "A few well-loved essentials, picked by our demo customers.",
+            "productIds": ["daily-vitality", "radiance-sunscreen", "digital-thermometer", "hydration-sachets", "soothing-lip-balm"],
+            "variant": "bestsellers",
+            "showControls": false,
+            "stockInLabel": "In stock",
+            "stockLowLabel": "Almost gone",
+            "emptyTitle": "No little finds just yet",
+            "emptyDescription": "Try another search or clear your filters to see all our demo essentials.",
+            "emptyButtonLabel": "Clear filters",
+            "activeFilterPrefix": "Showing",
+            "clearFilterLabel": "Clear filter"
+          }
+        },
+        {
+          "id": "wellness",
+          "type": "wellness",
+          "content": {
+            "title": "A softer kind of self-care",
+            "eyebrow": "A LITTLE TIME FOR YOU",
+            "description": "A few simple ways to make looking after yourself feel a little more like you.",
+            "cardEyebrows": ["A MOMENT FOR YOU", "THE EVERYDAY EDIT"],
+            "linkLabel": "Explore the edit",
+            "items": [
+              {
+                "title": "Build your feel-good routine",
+                "description": "Little everyday essentials to support the rituals that are already yours.",
+                "image": "https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=850&q=85",
+                "imageAlt": "Fresh, bright wellness essentials arranged in natural light",
+                "href": "#featured"
+              },
+              {
+                "title": "Make room for a little care",
+                "description": "Simple personal-care picks that make the everyday feel considered.",
+                "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=850&q=85",
+                "imageAlt": "Minimal skincare essentials styled on a warm neutral surface",
+                "href": "#categories"
+              }
+            ]
+          }
+        },
+        {
+          "id": "benefits",
+          "type": "benefits",
+          "content": {
+            "items": [
+              { "title": "Carefully considered", "description": "Everyday essentials, thoughtfully brought together.", "icon": "shield" },
+              { "title": "Easy on your time", "description": "A simple, friendly shopping experience from start to finish.", "icon": "truck" },
+              { "title": "Here when you need us", "description": "Our demo team is always happy to help.", "icon": "headset" },
+              { "title": "Your details stay yours", "description": "This demo keeps checkout local and takes no payment.", "icon": "lock" }
+            ]
+          }
+        },
+        {
+          "id": "newsletter",
+          "type": "newsletter",
+          "content": {
+            "title": "A little goodness in your inbox",
+            "eyebrow": "A NOTE FROM US",
+            "description": "Sign up for occasional notes, new arrivals and thoughtful offers. No noise, we promise.",
+            "buttonLabel": "Sign me up",
+            "emailLabel": "Your email address",
+            "emailPlaceholder": "Your email address",
+            "footnote": "Just the good things. Unsubscribe whenever.",
+            "successTitle": "You’re on the list!",
+            "successDescription": "This demo doesn’t save or send your email."
+          }
+        },
+        {
+          "id": "footer",
+          "type": "footer",
+          "content": {
+            "brandDescription": "A demo pharmacy storefront made for everyday care. Thoughtful essentials, a little more convenience, and a friendly hello whenever you need it.",
+            "contact": {
+              "phone": "+91 00000 00000",
+              "email": "hello@medicare-demo.example",
+              "address": "Demo address — Bengaluru, Karnataka"
+            },
+            "linkGroups": [
+              {
+                "title": "Explore",
+                "links": [
+                  { "label": "Shop all", "href": "#featured" },
+                  { "label": "Wellness", "href": "#categories" },
+                  { "label": "Personal care", "href": "#wellness" }
+                ]
+              },
+              {
+                "title": "A little help",
+                "links": [
+                  { "label": "Contact us", "href": "mailto:hello@medicare-demo.example" },
+                  { "label": "Delivery information", "href": "#benefits" },
+                  { "label": "Frequently asked questions", "href": "#benefits" }
+                ]
+              },
+              {
+                "title": "The important bits",
+                "links": [
+                  { "label": "Privacy policy", "href": "#footer" },
+                  { "label": "Terms of use", "href": "#footer" },
+                  { "label": "Demo disclaimer", "href": "#footer" }
+                ]
+              }
+            ],
+            "copyright": "© 2026 MediCare Pharmacy Demo. Made with care.",
+            "demoDisclaimer": "Demo only. No prescription fulfilment, medical advice or payments."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -6,12 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --tsconfig tsconfig.test.json --test src/lib/cart.test.ts src/lib/template.test.ts src/components/SectionRenderer.test.tsx"
   },
   "dependencies": {
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "next": "15.5.28"
+  },
+  "overrides": {
+    "postcss": "^8.5.31"
   },
   "devDependencies": {
     "typescript": "^5",
@@ -20,6 +25,7 @@
     "@types/react-dom": "^19",
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4",
+    "tsx": "4.23.15",
     "eslint": "^9",
     "eslint-config-next": "15.5.28",
     "@eslint/eslintrc": "^3"
